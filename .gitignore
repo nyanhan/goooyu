@@ -53,3 +53,4 @@ sftp-config.json
 .project
 .pydevproject
 .settings/*
+secret_keys.py

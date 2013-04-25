@@ -34,3 +34,10 @@ sh scripts/start.sh
 ```
 
 Assuming the latest App Engine SDK is installed, the test environment is available at http://localhost:8080
+
+## Deploy
+Use <tt>scripts/update.sh</tt> to deploy projects onto Google appengine:
+```shell
+sh scripts/update.sh
+```
+Then, you can access http://goooyu-alfa.appspot.com for preview.

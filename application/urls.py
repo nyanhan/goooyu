@@ -18,6 +18,11 @@ app.add_url_rule('/_ah/warmup', 'warmup', view_func=views.warmup)
 # Home page
 app.add_url_rule('/', 'home', view_func=views.home)
 
+app.add_url_rule('/login', 'login', view_func=views.google_login)
+app.add_url_rule('/oauth2callback', 'oauth2callback', view_func=views.oauth2callback)
+app.add_url_rule('/feeds', 'feeds', view_func=views.feeds)
+app.add_url_rule('/import', 'import', view_func=views.import_reader, methods=['GET', 'POST'])
+
 # Say hello
 app.add_url_rule('/hello/<username>', 'say_hello', view_func=views.say_hello)
 

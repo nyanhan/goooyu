@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block style_block %}
+    <style type="text/css">
+        table.table { width: 60%; }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+<form action="/import" method="POST">
+    <input type="submit" class="btn btn-primary" value="Import from Google Reader"></input>
+</form>
+{% endblock content %}

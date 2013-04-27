@@ -7,10 +7,13 @@ App Engine datastore models
 
 
 from google.appengine.ext import ndb
+from oauth2client.appengine import CredentialsProperty
+
+class Credentials(ndb.Model):
+    credentials = CredentialsProperty()
 
 
 class Feed(ndb.Model):
-    """Example Model"""
     feed_address = ndb.StringProperty(required=True)
     feed_link = ndb.StringProperty(required=True)
     feed_title = ndb.StringProperty(default="")

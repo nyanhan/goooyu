@@ -34,3 +34,9 @@ DEBUG_TB_INTERCEPT_REDIRECTS = False
 
 # Flask-Cache settings
 CACHE_TYPE = 'gaememcached'
+
+# Google OAuth
+G_CLIENT_ID = '1021391401466.apps.googleusercontent.com'
+G_EMAIL_ADDR = '1021391401466@developer.gserviceaccount.com'
+G_CLIENT_SECRET = 'stlQikmrbihL0NawWKwpgDYt'
+G_REDIRECT_URI = 'http://goooyu-alfa.appspot.com/oauth2callback'
